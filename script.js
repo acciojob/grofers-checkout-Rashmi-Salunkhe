@@ -21,6 +21,9 @@ const getSum = () => {
 
     // Add the new row to the table
     document.querySelector('table').appendChild(totalRow);
+
+    // Display the total price in the div with id 'ans'
+    document.getElementById('ans').textContent = `Total Price: Rs ${total}`;
 };
 
 // Add event listener to the button
